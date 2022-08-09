@@ -1,0 +1,77 @@
+﻿@model HealthDelievey.Models.h_staff
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <div class="container-fluid">
+        <div class="row cm-fix-height">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>Details of the staff</h2>
+
+                        <div>
+                            <hr />
+                            <dl class="dl-horizontal">
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.name)
+                                </dt>
+
+                                <dd>
+                                    @Html.DisplayFor(model => model.name)
+                                </dd>
+
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.age)
+                                </dt>
+
+                                <dd>
+                                    @Html.DisplayFor(model => model.age)
+                                </dd>
+
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.phone)
+                                </dt>
+
+                                <dd>
+                                    @Html.DisplayFor(model => model.phone)
+                                </dd>
+
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.position)
+                                </dt>
+
+                                <dd>
+                                    @Html.DisplayFor(model => model.position)
+                                </dd>
+
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.salary)
+                                </dt>
+
+                                <dd>
+                                    @Html.DisplayFor(model => model.salary)
+                                </dd>
+
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.entrydate)
+                                </dt>
+
+                                <dd>
+                                    @Html.DisplayFor(model => model.entrydate)
+                                </dd>
+
+                            </dl>
+                        </div>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                            @Html.ActionLink("Back to List", "Index")
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

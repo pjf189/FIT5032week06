@@ -26,28 +26,22 @@
                         <li class="cm-submenu">
                             <a class="sf-user-id">staff_management <span class="caret"></span></a>
                             <ul>
-                                <li><a href="StaffInformation">staff information</a></li>
-                                <li><a href="staff_add">add staff</a></li>
-                                <li><a href="staff_delete">delete staff</a></li>
-                                <li><a href="staff_edit">edit staff</a></li>
+                                <li><a href="/Staff/Index">staff information</a></li>
+                                <li><a href="/Staff/Create">add staff</a></li>
                             </ul>
                         </li>
                         <li class="cm-submenu">
                             <a class="sf-profile-group">customer_management <span class="caret"></span></a>
                             <ul>
-                                <li><a href="customer_management">custome information</a></li>
-                                <li><a href="customer_add">add custome</a></li>
-                                <li><a href="customer_delete">delete custome</a></li>
-                                <li><a href="customer_edit">edit custome</a></li>
+                                <li><a href="/Customer/Index">customer information</a></li>
+                                <li><a href="/Customer/Create">add customer</a></li>
                             </ul>
                         </li>
                         <li class="cm-submenu">
                             <a class="sf-carton">Medical Service <span class="caret"></span></a>
                             <ul>
-                                <li><a href="medical_service">service information</a></li>
-                                <li><a href="service_add">add service</a></li>
-                                <li><a href="service_delete">delete service</a></li>
-                                <li><a href="service_edit">edit service</a></li>
+                                <li><a href="/Service/Index">service information</a></li>
+                                <li><a href="/Service/Create">add service</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -67,40 +61,12 @@
             <div class="pull-right">
                 <div id="cm-search-btn" class="btn btn-primary md-search-white" data-toggle="cm-search"></div>
             </div>
-            <div class="dropdown pull-right">
-                <button class="btn btn-primary md-notifications-white" data-toggle="dropdown"> <span class="label label-danger">23</span> </button>
-                <div class="popover cm-popover bottom">
-                    <div class="arrow"></div>
-                    <div class="popover-content">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item">
-                                <h4 class="list-group-item-heading text-overflow">
-                                    <i class="fa fa-fw fa-envelope"></i> Nunc volutpat aliquet magna.
-                                </h4>
-                                <p class="list-group-item-text text-overflow">Pellentesque tincidunt mollis scelerisque. Praesent vel blandit quam.</p>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <h4 class="list-group-item-heading">
-                                    <i class="fa fa-fw fa-envelope"></i> Aliquam orci lectus
-                                </h4>
-                                <p class="list-group-item-text">Donec quis arcu non risus sagittis</p>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <h4 class="list-group-item-heading">
-                                    <i class="fa fa-fw fa-warning"></i> Holy guacamole !
-                                </h4>
-                                <p class="list-group-item-text">Best check yo self, you're not looking too good.</p>
-                            </a>
-                        </div>
-                        <div style="padding:10px"><a class="btn btn-success btn-block" href="#">Show me more...</a></div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="dropdown pull-right">
                 <button class="btn btn-primary md-account-circle-white" data-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                     <li class="disabled text-center">
-                        <a style="cursor:default;"><strong>John Smith</strong></a>
+                        <a style="cursor:default;"><strong>@Session["username"]</strong></a>
                     </li>
                     <li class="divider"></li>
                     <li>
@@ -110,7 +76,7 @@
                         <a href="#"><i class="fa fa-fw fa-cog"></i> Settings</a>
                     </li>
                     <li>
-                        <a href="login.html"><i class="fa fa-fw fa-sign-out"></i> Sign out</a>
+                        <a href="/Login/Logout"><i class="fa fa-fw fa-sign-out"></i> Sign out</a>
                     </li>
                 </ul>
             </div>

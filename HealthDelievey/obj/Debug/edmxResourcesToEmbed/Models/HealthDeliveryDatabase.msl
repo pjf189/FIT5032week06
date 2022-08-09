@@ -12,5 +12,39 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="h_staff">
+      <EntityTypeMapping TypeName="HealthDeliveryDBModel.h_staff">
+        <MappingFragment StoreEntitySet="h_staff">
+          <ScalarProperty Name="entrydate" ColumnName="entrydate" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="h_customer">
+      <EntityTypeMapping TypeName="HealthDeliveryDBModel.h_customer">
+        <MappingFragment StoreEntitySet="h_customer">
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="h_service">
+      <EntityTypeMapping TypeName="HealthDeliveryDBModel.h_service">
+        <MappingFragment StoreEntitySet="h_service">
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

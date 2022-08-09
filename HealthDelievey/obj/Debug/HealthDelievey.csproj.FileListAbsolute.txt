@@ -175,8 +175,8 @@ C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\bin\zh-Hans\System.We
 C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\bin\zh-Hans\System.Web.WebPages.resources.dll
 C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\obj\Debug\HealthDelievey.csprojAssemblyReference.cache
 C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\obj\Debug\HealthDelievey.csproj.CoreCompileInputs.cache
 C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\obj\Debug\HealthDelievey.csproj.CopyComplete
 C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\obj\Debug\HealthDelievey.dll
 C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\obj\Debug\HealthDelievey.pdb
+C:\Users\pjf57\Source\Repos\health-delivery\HealthDelievey\obj\Debug\HealthDelievey.csprojAssemblyReference.cache

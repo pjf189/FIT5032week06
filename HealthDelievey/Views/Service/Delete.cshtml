@@ -1,0 +1,59 @@
+﻿@model HealthDelievey.Models.h_service
+
+@{
+    ViewBag.Title = "Delete service";
+}
+<div class="container-fluid">
+    <div class="row cm-fix-height">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <h2>Delete medical service</h2>
+
+                    <h3>Are you sure you want to delete this service?</h3>
+                    <div>
+                        <h4>h_service</h4>
+                        <hr />
+                        <dl class="dl-horizontal">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.type)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.type)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.price)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.price)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.duration)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.duration)
+                            </dd>
+
+                        </dl>
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-actions no-color">
+                                <input type="submit" value="Delete" class="btn btn-default" /> |
+                                @Html.ActionLink("Back to List", "Index")
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

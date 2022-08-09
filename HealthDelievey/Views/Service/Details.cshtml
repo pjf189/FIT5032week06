@@ -1,0 +1,52 @@
+﻿@model HealthDelievey.Models.h_service
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container-fluid">
+    <div class="row cm-fix-height">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div>
+                        <h2>Details of medical service</h2>
+                        <hr />
+                        <dl class="dl-horizontal">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.type)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.type)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.price)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.price)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.duration)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.duration)
+                            </dd>
+
+                        </dl>
+                    </div>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

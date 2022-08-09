@@ -4,13 +4,47 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
-    <Property Name="username" Type="nchar" MaxLength="30" Nullable="false" />
-    <Property Name="pass" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="pass" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="power" Type="int" />
     <Property Name="createtime" Type="date" />
   </EntityType>
+  <EntityType Name="h_customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="age" Type="int" Nullable="false" />
+    <Property Name="gender" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="phone" Type="varchar" MaxLength="13" Nullable="false" />
+  </EntityType>
+  <EntityType Name="h_service">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="duration" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="h_staff">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="age" Type="int" Nullable="false" />
+    <Property Name="phone" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="position" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="salary" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="entrydate" Type="date" />
+  </EntityType>
   <EntityContainer Name="HealthDeliveryDBModelStoreContainer">
     <EntitySet Name="h_admin" EntityType="Self.h_admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="h_customer" EntityType="Self.h_customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="h_service" EntityType="Self.h_service" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="h_staff" EntityType="Self.h_staff" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

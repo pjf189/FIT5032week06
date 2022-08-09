@@ -41,9 +41,18 @@ namespace HealthDelievey.Controllers
             }
             else
             {
+                Session["username"] = admin.username;
                 return Redirect("/Home/Index");
             }
             return View();
         }
+        public ActionResult Logout()
+        {
+            Session["username"] = null;
+            Session["password"] = null;
+            return Redirect("/Login/Index");
+        }
     }
+
+    
 }

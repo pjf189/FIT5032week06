@@ -26,5 +26,8 @@ namespace HealthDelievey.Models
         }
     
         public virtual DbSet<h_admin> h_admin { get; set; }
+        public virtual DbSet<h_staff> h_staff { get; set; }
+        public virtual DbSet<h_customer> h_customer { get; set; }
+        public virtual DbSet<h_service> h_service { get; set; }
     }
 }

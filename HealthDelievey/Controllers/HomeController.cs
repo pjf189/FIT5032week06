@@ -10,11 +10,8 @@ namespace HealthDelievey.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult StaffInformation()
-        {
+            if (Session["username"] == null)
+                return Redirect("/Login/Index");
             return View();
         }
 

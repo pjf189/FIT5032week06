@@ -1,0 +1,75 @@
+﻿@model IEnumerable<HealthDelievey.Models.h_staff>
+
+@{
+    ViewBag.Title = "Index";
+}
+    <div class="container-fluid">
+        <div class="row cm-fix-height">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>
+                            @Html.ActionLink("Create New", "Create")
+                        </p>
+                        <h2>Staff Information</h2>
+                        <table class="table">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.age)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.phone)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.position)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.salary)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.entrydate)
+                                </th>
+                                <th></th>
+                            </tr>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.age)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.phone)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.position)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.salary)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.entrydate)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+

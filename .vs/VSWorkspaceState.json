@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HealthDelievey",
+    "\\HealthDelievey\\Models"
   ],
-  "SelectedNode": "\\HealthDelievey.sln",
+  "SelectedNode": "\\HealthDelievey\\Models\\HealthDeliveryDatabase.edmx",
   "PreviewInSolutionExplorer": false
 }

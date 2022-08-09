@@ -6,6 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="d025959723d748e6932d3862a085a82b" Name="Diagram1">
         <EntityTypeShape EntityType="HealthDeliveryDBModel.h_admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HealthDeliveryDBModel.h_staff" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="HealthDeliveryDBModel.h_customer" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="HealthDeliveryDBModel.h_service" Width="1.5" PointX="3.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
