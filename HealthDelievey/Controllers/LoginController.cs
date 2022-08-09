@@ -41,7 +41,7 @@ namespace HealthDelievey.Controllers
             }
             else
             {
-                return RedirectToAction("/Home/Index");
+                return Redirect("/Home/Index");
             }
             return View();
         }
